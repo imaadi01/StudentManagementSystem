@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="920.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.AdminDashboardController">
+   <children>
+      <ImageView fitHeight="926.0" fitWidth="910.0" layoutX="-2.0" layoutY="-5.0">
+         <image>
+            <Image url="@../img/admin_portal.jpeg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="21.0" layoutY="137.0" prefHeight="542.0" prefWidth="629.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="175.0" text="Email" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email_entity" alignment="CENTER" editable="false" prefHeight="51.0" prefWidth="341.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="188.0" text="Contact Number" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="contactNumber_entity" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="165.0" text="Father's Name" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fatherName_entity" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="145.0" text="Date Of Birth" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dateOfBirth_entity" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="115.0" text="Gender" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gender_entity" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="143.0" text="Address" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address_entity" alignment="CENTER" editable="false" prefHeight="46.0" prefWidth="287.0" style="-fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="37.0" prefHeight="100.0" prefWidth="877.0" style="-fx-background-color: transparent;">
+         <children>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="112.0" style="-fx-border-color: white;" text="ID" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="id_entity" alignment="CENTER" editable="false" prefHeight="53.0" prefWidth="129.0" style="-fx-border-color: white; -fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="132.0" layoutY="10.0" prefHeight="37.0" prefWidth="111.0" style="-fx-border-color: white;" text="Joined" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Joined_entity" alignment="CENTER" editable="false" layoutX="193.0" layoutY="10.0" prefHeight="53.0" prefWidth="164.0" style="-fx-border-color: white; -fx-background-color: transparent;" styleClass="jfx-text-field" stylesheets="@ColorCascadeStyleSheet.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="687.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: transparent;">
+         <image>
+            <Image url="@../img/adminlogo.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="name_entity" alignment="CENTER" layoutX="618.0" layoutY="294.0" prefHeight="41.0" prefWidth="277.0" style="-fx-background-color: transparent;" text="NAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="687.0" layoutY="856.0" mnemonicParsing="false" onAction="#edit_button" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #36b9ff;" text="Edit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="795.0" layoutY="856.0" mnemonicParsing="false" onAction="#submit_button" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #36b9ff;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.CoursesRegisteredController">
+   <children>
+      <ImageView fitHeight="903.0" fitWidth="910.0">
+         <image>
+            <Image url="@../img/courses_registered.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vbox" alignment="CENTER" layoutY="-1.0" prefHeight="903.0" prefWidth="910.0" />
+   </children>
+</AnchorPane>

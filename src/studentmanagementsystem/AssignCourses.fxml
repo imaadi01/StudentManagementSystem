@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="920.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.AssignCoursesController">
+   <children>
+      <ImageView fitHeight="920.0" fitWidth="910.0">
+         <image>
+            <Image url="@../img/assigncourses.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="218.0" prefHeight="42.0" prefWidth="187.0" text="COURSES" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <ChoiceBox fx:id="course_entity" layoutX="416.0" layoutY="217.0" prefHeight="42.0" prefWidth="259.0" />
+      <Label layoutX="222.0" layoutY="303.0" prefHeight="42.0" prefWidth="187.0" text="TEACHER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <ChoiceBox fx:id="teacher_entity" layoutX="416.0" layoutY="301.0" prefHeight="42.0" prefWidth="259.0" />
+      <Label layoutX="222.0" layoutY="378.0" prefHeight="42.0" prefWidth="187.0" text="SECTION" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <ChoiceBox fx:id="section_entity" layoutX="416.0" layoutY="376.0" prefHeight="42.0" prefWidth="259.0" />
+      <Button layoutX="409.0" layoutY="528.0" mnemonicParsing="false" onAction="#assignButton" prefHeight="42.0" prefWidth="125.0" text="Assign" />
+      <Label layoutX="222.0" layoutY="138.0" prefHeight="42.0" prefWidth="187.0" text="SEMESTER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <ChoiceBox fx:id="semester_entity" layoutX="416.0" layoutY="136.0" onMouseEntered="#assignValuesAccordingToSemester" prefHeight="42.0" prefWidth="259.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="1430.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.StudentSearchController">
+   <children>
+      <HBox layoutY="45.0" prefHeight="575.0" prefWidth="1430.0">
+         <children>
+            <TableView fx:id="student_table" prefHeight="575.0" prefWidth="1446.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="77.60000306367874" text="ID" />
+                <TableColumn fx:id="col_firstname" minWidth="30.0" prefWidth="109.60000610351562" text="First Name" />
+                  <TableColumn fx:id="col_lastname" minWidth="30.0" prefWidth="101.60002136230469" text="Last Name" />
+                  <TableColumn fx:id="col_father" minWidth="9.5999755859375" prefWidth="122.4000244140625" text="Father Name" />
+                  <TableColumn fx:id="col_email" minWidth="30.0" prefWidth="144.0" text="Email" />
+                  <TableColumn fx:id="col_number" minWidth="18.39996337890625" prefWidth="100.0" text="Contact Number" />
+                  <TableColumn fx:id="col_dob" minWidth="30.0" prefWidth="100.0" text="Date Of Birth" />
+                  <TableColumn fx:id="col_gender" minWidth="30.0" prefWidth="85.5999755859375" text="Gender" />
+                  <TableColumn fx:id="col_department" minWidth="30.0" prefWidth="77.5999755859375" text="Department" />
+                  <TableColumn fx:id="col_address" minWidth="30.0" prefWidth="137.60003662109375" text="Address" />
+                  <TableColumn fx:id="col_section" minWidth="30.0" prefWidth="51.199951171875" text="Section" />
+                  <TableColumn fx:id="col_semester" minWidth="30.0" prefWidth="59.2000732421875" text="Semester" />
+                  <TableColumn fx:id="col_joined" minWidth="30.0" prefWidth="102.4000244140625" text="Joined Date" />
+                  <TableColumn fx:id="col_left" minWidth="30.0" prefWidth="103.0" text="Left Date" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="1127.0">
+         <children>
+            <ComboBox fx:id="search_by_combobox" prefHeight="26.0" prefWidth="212.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <TextField fx:id="search_entity">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#SearchButton" text="Search">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

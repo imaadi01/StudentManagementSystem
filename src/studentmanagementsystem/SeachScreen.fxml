@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="920.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.SeachScreenController">
+   <children>
+      <ImageView fitHeight="920.0" fitWidth="910.0" layoutX="1.0">
+         <image>
+            <Image url="@../img/createsreens.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="284.0" layoutX="205.0" layoutY="149.0" onMouseClicked="#StudentSearch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/student.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="226.0" layoutX="481.0" layoutY="154.0" onMouseClicked="#TeacherSearch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
